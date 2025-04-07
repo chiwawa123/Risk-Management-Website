@@ -6,8 +6,93 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+          if ($('.tgmenu__wrap li.menu-item-has-children ul').length) {
+              $('.tgmenu__wrap .navigation li.menu-item-has-children').append('<div class="dropdown-btn"><span class="plus-line"></span></div>');
+          }
+  
+          if ($('.tgmobile__menu').length) {
+              var mobileMenuContent = $('.tgmenu__wrap .tgmenu__main-menu').html();
+              $('.tgmobile__menu .tgmobile__menu-box .tgmobile__menu-outer').append(mobileMenuContent);
+  
+              $(document).on('click', '.tgmobile__menu li.menu-item-has-children .dropdown-btn', function () {
+                  $(this).toggleClass('open');
+                  $(this).prev('ul').slideToggle(300);
+              });
+  
+              // Menu Toggle Btn
+              $(document).on('click', '.mobile-nav-toggler', function () {
+                  $('body').addClass('mobile-menu-visible');
+              });
+  
+              // Close menu on backdrop click or close button
+              $(document).on('click', '.tgmobile__menu-backdrop, .tgmobile__menu .close-btn', function () {
+                  $('body').removeClass('mobile-menu-visible');
+              });
+          }
+      });
+  </script>
+
+    <!-- Swiper CSS -->
+
 </head>
-<body>
+
+<body class="white-bg">
+
+
+
+    <!--Preloader-->
+    <div id="preloader" class="white-bg">
+      <div id="loader" class="loader">
+          <div class="loader-container">
+              <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
+          </div>
+      </div>
+  </div>
+      <!-- Scroll-top -->
+      <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
   <app-root></app-root>
+
+
+
+
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/jquery.datetimepicker.min.js"></script>
+    <!-- Gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- Scroll Trigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- Split Text -->
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Swiper JS -->
+
+
 </body>
 </html>
