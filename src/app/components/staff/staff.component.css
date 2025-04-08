@@ -1,0 +1,81 @@
+.tree ul {
+  padding-top: 30px;
+  position: relative;
+}
+
+.tree ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 3px solid #ccc;  /* Increased line thickness */
+  width: 0;
+  height: 30px;  /* Increased height */
+}
+
+.tree li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: 30px 10px 0 4px;  /* Increased padding */
+  vertical-align: top;
+}
+
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 3px solid #ccc;  /* Increased line thickness */
+  width: 50%;
+  height: 30px;  /* Increased height */
+}
+
+.tree li::before {
+  right: 50%;
+  border-right: 3px solid #ccc;  /* Increased line thickness */
+}
+
+.tree li::after {
+  left: 50%;
+  border-left: 3px solid #ccc;  /* Increased line thickness */
+}
+
+.tree li:only-child::before,
+.tree li:only-child::after {
+  display: none;
+}
+
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0;
+}
+
+.tree .team-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  min-width: 180px;  /* Increased minimum width */
+  max-width: 250px;  /* Increased maximum width */
+}
+
+.tree .team-card img {
+  width: 200px;  /* Increased image width */
+  height: 200px;  /* Increased image height */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+@media(max-width: 768px) {
+  .tree ul::before,
+  .tree li::before,
+  .tree li::after {
+      border: none;
+  }
+  .tree li {
+      display: block;
+      margin: 0 auto;
+  }
+}
