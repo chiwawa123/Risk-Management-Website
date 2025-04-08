@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RiskWebsite</title>
+  <title>Risk Management</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/img/favico.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -23,21 +23,21 @@
           if ($('.tgmenu__wrap li.menu-item-has-children ul').length) {
               $('.tgmenu__wrap .navigation li.menu-item-has-children').append('<div class="dropdown-btn"><span class="plus-line"></span></div>');
           }
-  
+
           if ($('.tgmobile__menu').length) {
               var mobileMenuContent = $('.tgmenu__wrap .tgmenu__main-menu').html();
               $('.tgmobile__menu .tgmobile__menu-box .tgmobile__menu-outer').append(mobileMenuContent);
-  
+
               $(document).on('click', '.tgmobile__menu li.menu-item-has-children .dropdown-btn', function () {
                   $(this).toggleClass('open');
                   $(this).prev('ul').slideToggle(300);
               });
-  
+
               // Menu Toggle Btn
               $(document).on('click', '.mobile-nav-toggler', function () {
                   $('body').addClass('mobile-menu-visible');
               });
-  
+
               // Close menu on backdrop click or close button
               $(document).on('click', '.tgmobile__menu-backdrop, .tgmobile__menu .close-btn', function () {
                   $('body').removeClass('mobile-menu-visible');
@@ -58,7 +58,7 @@
     <div id="preloader" class="white-bg">
       <div id="loader" class="loader">
           <div class="loader-container">
-              <div class="loader-icon"><img src="assets/img/logo/preloader.svg" alt="Preloader"></div>
+              <div class="loader-icon"><img src="assets/img/logo/lg.png" alt="Preloader"></div>
           </div>
       </div>
   </div>
