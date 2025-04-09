@@ -55,8 +55,8 @@
   --tg-body-line-height: 1.75;
   --tg-heading-line-height: 1.2;
   --tg-body-color: #74787C;
-  --tg-heading-color: #1D3131;
-  --tg-theme-primary: #24b0ed;
+  --tg-heading-color: #24b0ed;
+  --tg-theme-primary: #caa350;
   --tg-color-dark-theme: #51AEA9;
   --tg-color-white-default: #ffffff;
   --tg-color-red-default: #ED1730;
@@ -77,7 +77,7 @@
   --tg-color-smoke-2: #E4F2F6;
   --tg-color-smoke-3: #F6F6F7;
   --tg-color-smoke-4: #F2F6FF;
-  --tg-color-smoke-5: #F6F6F6;
+  --tg-color-smoke-5: #24b0ed;
   --tg-color-smoke-6: #708288;
   --tg-color-smoke-7: #F0F3F9;
   --tg-border-1: #EAEAEA;
@@ -748,7 +748,7 @@ textarea {
   color: var(--tg-theme-primary) !important;
 }
 .btn-four {
-  background: #4D555A;
+  background: #24b0ed;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .btn-four:before {
@@ -2665,7 +2665,7 @@ textarea.is-invalid {
 .info-card .info-card_link {
   font-size: 18px;
   font-weight: 700;
-  color: var(--tg-heading-color);
+  color: var( --tg-color-gray-1);
   margin-bottom: -0.4em;
   display: block;
 }

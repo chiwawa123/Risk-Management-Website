@@ -8,7 +8,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  border-left: 3px solid #ccc;  /* Increased line thickness */
+  border-left: 3px solid #24b0ed;  /* Increased line thickness */
   width: 0;
   height: 30px;  /* Increased height */
 }
@@ -26,19 +26,19 @@
   content: '';
   position: absolute;
   top: 0;
-  border-top: 3px solid #ccc;  /* Increased line thickness */
+  border-top: 3px solid #24b0ed;  /* Increased line thickness */
   width: 50%;
   height: 30px;  /* Increased height */
 }
 
 .tree li::before {
   right: 50%;
-  border-right: 3px solid #ccc;  /* Increased line thickness */
+  border-right: 3px solid #24b0ed;  /* Increased line thickness */
 }
 
 .tree li::after {
   left: 50%;
-  border-left: 3px solid #ccc;  /* Increased line thickness */
+  border-left: 3px solid #24b0ed;  /* Increased line thickness */
 }
 
 .tree li:only-child::before,
