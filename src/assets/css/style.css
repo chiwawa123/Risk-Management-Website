@@ -11755,8 +11755,8 @@ blockquote .blockquote-card_title:before {
   color: var(--tg-theme-primary);
 }
 .footer__middle {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+
 }
 .footer__location .footer__location-subtitle {
   font-size: 10px;

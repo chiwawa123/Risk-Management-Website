@@ -1,0 +1,17 @@
+.service-bg1-1 {
+
+  background: #fff;
+}
+.service-card {
+  border-top: 2px solid #24b0ed;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
