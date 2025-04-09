@@ -6,3 +6,6 @@
   border-top: 8px solid #24b0ed;
 }
 
+.info-card_content {
+  user-select: none;
+}

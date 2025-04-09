@@ -63,7 +63,7 @@
 .tree .team-card img {
   width: 500px;  /* Increased image width */
   height: auto;  /* Increased image height */
-  object-fit: cover;
+
   border-radius: 50%;
   margin-bottom: 15px;
 }
